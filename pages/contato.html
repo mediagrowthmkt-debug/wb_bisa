@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -22,8 +22,10 @@
     "email": "contato@institutobisa.com.br",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "R. Demétrio Ribeiro, 51 - sala 902",
       "addressLocality": "Florianópolis",
       "addressRegion": "SC",
+      "postalCode": "88020-700",
       "addressCountry": "BR"
     },
     "sameAs": ["https://instagram.com/institutobisa"]
@@ -38,11 +40,11 @@
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">
         <div class="nav__logo-imgs">
-          <img src="../../logos/BISA_bege_fundo_verde.png" class="nav__logo-img--header" alt="BISA" height="56" />
+          <img src="../logos/BISA_bege_fundo_branco.png" class="nav__logo-img--header" alt="BISA" height="56" />
         </div>
       </a>
       <ul class="nav__menu" id="navMenu">
-        <li class="nav__menu-logo"><img src="../../logos/BISA_bege_fundo_verde.png" alt="BISA" height="64" /></li>
+        <li class="nav__menu-logo"><img src="../logos/BISA_bege_fundo_branco.png" alt="BISA" height="64" /></li>
         <li><a href="../index.html" class="nav__link">Início</a></li>
         <li><a href="sobre.html" class="nav__link">Sobre a BISA</a></li>
         <li><a href="tratamentos.html" class="nav__link">Tratamentos</a></li>
@@ -89,42 +91,36 @@
         <p style="color:var(--text-mid);margin-bottom:32px;font-size:0.95rem;">Preencha o formulário abaixo e entraremos em contato pelo WhatsApp para confirmar o agendamento.</p>
 
         <form class="contact-form" id="contactForm" novalidate>
-          <div class="contact-form__row">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="nome">Nome completo *</label>
-              <input type="text" id="nome" name="nome" class="contact-form__input" placeholder="Seu nome" required autocomplete="name" />
+          <div class="form-field">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+            <div class="form-field">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-field">
+              <label for="whatsapp">WhatsApp *</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(48) 9 9999-9999" required autocomplete="tel" />
             </div>
           </div>
-          <div class="contact-form__row contact-form__row--2col">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="email">E-mail *</label>
-              <input type="email" id="email" name="email" class="contact-form__input" placeholder="seu@email.com" required autocomplete="email" />
-            </div>
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="whatsapp">WhatsApp *</label>
-              <input type="tel" id="whatsapp" name="whatsapp" class="contact-form__input" placeholder="(48) 9 9999-9999" required autocomplete="tel" />
-            </div>
+          <div class="form-field">
+            <label for="interesse">Área de interesse</label>
+            <select id="interesse" name="interesse" style="background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9A550' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:right 14px center;background-size:18px;padding-right:44px;">
+              <option value="">Selecione um tratamento (opcional)</option>
+              <option value="Saúde Hormonal">Saúde Hormonal</option>
+              <option value="Longevidade">Longevidade</option>
+              <option value="Performance e Energia">Performance e Energia</option>
+              <option value="Composição Corporal">Composição Corporal</option>
+              <option value="Sono e Recuperação">Sono e Recuperação</option>
+              <option value="Saúde Mental Integrativa">Saúde Mental Integrativa</option>
+              <option value="Avaliação Geral">Avaliação Geral — Não sei por onde começar</option>
+            </select>
           </div>
-          <div class="contact-form__row">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="interesse">Área de interesse</label>
-              <select id="interesse" name="interesse" class="contact-form__input contact-form__select">
-                <option value="">Selecione um tratamento (opcional)</option>
-                <option value="Saúde Hormonal">Saúde Hormonal</option>
-                <option value="Longevidade">Longevidade</option>
-                <option value="Performance e Energia">Performance e Energia</option>
-                <option value="Composição Corporal">Composição Corporal</option>
-                <option value="Sono e Recuperação">Sono e Recuperação</option>
-                <option value="Saúde Mental Integrativa">Saúde Mental Integrativa</option>
-                <option value="Avaliação Geral">Avaliação Geral — Não sei por onde começar</option>
-              </select>
-            </div>
-          </div>
-          <div class="contact-form__row">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="mensagem">Mensagem (opcional)</label>
-              <textarea id="mensagem" name="mensagem" class="contact-form__input contact-form__textarea" placeholder="Conte um pouco sobre o que está sentindo ou o que gostaria de entender melhor..." rows="5"></textarea>
-            </div>
+          <div class="form-field">
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o que está sentindo ou o que gostaria de entender melhor..." rows="5"></textarea>
           </div>
           <button type="submit" class="btn btn--primary contact-form__submit">
             Enviar via WhatsApp
@@ -181,7 +177,7 @@
           </div>
           <div>
             <div class="contact-channel__label">Endereço</div>
-            <span class="contact-channel__value">Av. [Nome da Avenida], [Número]<br>Florianópolis — SC</span>
+            <span class="contact-channel__value">R. Demétrio Ribeiro, 51 - sala 902<br>Centro, Florianópolis — SC, 88020-700</span>
           </div>
         </div>
 
@@ -199,20 +195,12 @@
 <section class="section" style="padding-top:0;background:var(--off-white);">
   <div class="container">
     <div class="location-map" data-aos="fade-up">
-      <div class="location-map__placeholder">
-        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <p>BISA — Florianópolis, SC</p>
-        <span>Adicionar iframe do Google Maps aqui</span>
-      </div>
-      <!-- 
-        SUBSTITUIR pelo iframe do Google Maps:
         <iframe
-          src="https://www.google.com/maps/embed?pb=..."
-          width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+          src="https://maps.google.com/maps?q=R.+Dem%C3%A9trio+Ribeiro%2C+51%2C+Centro%2C+Florian%C3%B3polis%2C+SC%2C+88020-700&output=embed&hl=pt-BR&z=16"
+          width="100%" height="420" style="border:0;border-radius:var(--radius-md);" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Localização BISA Florianópolis">
         </iframe>
-      -->
     </div>
   </div>
 </section>
@@ -223,7 +211,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <div class="footer__logo">
-          <img src="../../logos/BISA_bege_fundo_preto.png" alt="BISA" />
+          <img src="../logos/BISA_bege_fundo_branco-removebg-preview.png" alt="BISA" />
         </div>
         <p class="footer__tagline">Bernhardt Instituto de Saúde Integrativa — medicina integrativa, longevidade e performance em Florianópolis.</p>
         <div class="footer__socials">
