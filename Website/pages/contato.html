@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <title>Contato — BISA Bernhardt Instituto de Saúde Integrativa</title>
+  <meta name="description" content="Agende sua avaliação na BISA ou tire suas dúvidas. Medicina integrativa, longevidade e performance em Florianópolis. Atendimento via WhatsApp." />
+  <link rel="canonical" href="https://www.institutobisa.com.br/pages/contato.html" />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "BISA — Bernhardt Instituto de Saúde Integrativa",
+    "url": "https://www.institutobisa.com.br",
+    "telephone": "+55-48-99999-9999",
+    "email": "contato@institutobisa.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Florianópolis",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["https://instagram.com/institutobisa"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <div class="nav__logo-imgs">
+          <img src="../../logos/BISA_bege_fundo_verde.png" class="nav__logo-img--header" alt="BISA" height="56" />
+        </div>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li class="nav__menu-logo"><img src="../../logos/BISA_bege_fundo_verde.png" alt="BISA" height="64" /></li>
+        <li><a href="../index.html" class="nav__link">Início</a></li>
+        <li><a href="sobre.html" class="nav__link">Sobre a BISA</a></li>
+        <li><a href="tratamentos.html" class="nav__link">Tratamentos</a></li>
+        <li><a href="metodologia.html" class="nav__link">Metodologia</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="contato.html" class="nav__link nav__link--active">Contato</a></li>
+        <li class="nav__menu-cta">
+          <a href="https://wa.me/5548999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20BISA."
+             class="btn btn--primary nav__cta-btn" target="_blank" rel="noopener noreferrer">Agendar Avaliação</a>
+        </li>
+      </ul>
+      <a href="https://wa.me/5548999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20BISA."
+         class="btn btn--primary nav__cta nav__cta-btn" target="_blank" rel="noopener noreferrer">Agendar Avaliação</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO INTERNO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content" data-aos="fade-up">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Início</a>
+        <span class="breadcrumb__sep">›</span>
+        <span>Contato</span>
+      </nav>
+      <h1 class="page-hero__title">Fale com a BISA</h1>
+      <p class="page-hero__sub">Agende sua avaliação ou tire suas dúvidas. Estamos prontos para ouvir você.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO PRINCIPAL -->
+<section class="section section--warm">
+  <div class="container">
+    <div class="contact-main-grid" data-aos="fade-up">
+
+      <!-- FORMULÁRIO -->
+      <div class="contact-form-col">
+        <h2 class="section-title" style="text-align:left;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:8px;">
+          Agende sua<br><em>avaliação inicial</em>
+        </h2>
+        <p style="color:var(--text-mid);margin-bottom:32px;font-size:0.95rem;">Preencha o formulário abaixo e entraremos em contato pelo WhatsApp para confirmar o agendamento.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" class="contact-form__input" placeholder="Seu nome" required autocomplete="name" />
+            </div>
+          </div>
+          <div class="contact-form__row contact-form__row--2col">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="email">E-mail *</label>
+              <input type="email" id="email" name="email" class="contact-form__input" placeholder="seu@email.com" required autocomplete="email" />
+            </div>
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="whatsapp">WhatsApp *</label>
+              <input type="tel" id="whatsapp" name="whatsapp" class="contact-form__input" placeholder="(48) 9 9999-9999" required autocomplete="tel" />
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="interesse">Área de interesse</label>
+              <select id="interesse" name="interesse" class="contact-form__input contact-form__select">
+                <option value="">Selecione um tratamento (opcional)</option>
+                <option value="Saúde Hormonal">Saúde Hormonal</option>
+                <option value="Longevidade">Longevidade</option>
+                <option value="Performance e Energia">Performance e Energia</option>
+                <option value="Composição Corporal">Composição Corporal</option>
+                <option value="Sono e Recuperação">Sono e Recuperação</option>
+                <option value="Saúde Mental Integrativa">Saúde Mental Integrativa</option>
+                <option value="Avaliação Geral">Avaliação Geral — Não sei por onde começar</option>
+              </select>
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="mensagem">Mensagem (opcional)</label>
+              <textarea id="mensagem" name="mensagem" class="contact-form__input contact-form__textarea" placeholder="Conte um pouco sobre o que está sentindo ou o que gostaria de entender melhor..." rows="5"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary contact-form__submit">
+            Enviar via WhatsApp
+          </button>
+          <p class="contact-form__disclaimer">Ao enviar, você será redirecionado ao WhatsApp da BISA com as informações preenchidas. Nenhum dado é armazenado neste formulário.</p>
+        </form>
+      </div>
+
+      <!-- CANAIS DIRETOS -->
+      <div class="contact-info-col">
+        <h3 style="font-family:var(--font-display);font-size:1.5rem;color:var(--text-dark);margin-bottom:24px;font-weight:400;">Canais diretos</h3>
+
+        <div class="contact-channel">
+          <div class="contact-channel__icon contact-channel__icon--whatsapp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </div>
+          <div>
+            <div class="contact-channel__label">WhatsApp</div>
+            <a href="https://wa.me/5548999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20BISA."
+               class="contact-channel__value contact-channel__value--link" target="_blank" rel="noopener noreferrer">
+              (48) 9 9999-9999
+            </a>
+            <div class="contact-channel__note">Atendimento de segunda a sexta, das 8h às 18h</div>
+          </div>
+        </div>
+
+        <div class="contact-channel">
+          <div class="contact-channel__icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-channel__label">E-mail</div>
+            <a href="mailto:contato@institutobisa.com.br" class="contact-channel__value contact-channel__value--link">
+              contato@institutobisa.com.br
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-channel">
+          <div class="contact-channel__icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <div>
+            <div class="contact-channel__label">Instagram</div>
+            <a href="https://instagram.com/institutobisa" class="contact-channel__value contact-channel__value--link" target="_blank" rel="noopener noreferrer">
+              @institutobisa
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-channel">
+          <div class="contact-channel__icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-channel__label">Endereço</div>
+            <span class="contact-channel__value">Av. [Nome da Avenida], [Número]<br>Florianópolis — SC</span>
+          </div>
+        </div>
+
+        <!-- AVISO -->
+        <div class="contact-notice" style="margin-top:32px;">
+          <p>A BISA atende exclusivamente com consultas agendadas. Não realizamos atendimento de urgência ou emergência.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section class="section" style="padding-top:0;background:var(--off-white);">
+  <div class="container">
+    <div class="location-map" data-aos="fade-up">
+      <div class="location-map__placeholder">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <p>BISA — Florianópolis, SC</p>
+        <span>Adicionar iframe do Google Maps aqui</span>
+      </div>
+      <!-- 
+        SUBSTITUIR pelo iframe do Google Maps:
+        <iframe
+          src="https://www.google.com/maps/embed?pb=..."
+          width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização BISA Florianópolis">
+        </iframe>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="../../logos/BISA_bege_fundo_preto.png" alt="BISA" />
+        </div>
+        <p class="footer__tagline">Bernhardt Instituto de Saúde Integrativa — medicina integrativa, longevidade e performance em Florianópolis.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/institutobisa" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navegação</div>
+        <ul class="footer__links">
+          <li><a href="../index.html" class="footer__link">Início</a></li>
+          <li><a href="sobre.html" class="footer__link">Sobre a BISA</a></li>
+          <li><a href="tratamentos.html" class="footer__link">Tratamentos</a></li>
+          <li><a href="metodologia.html" class="footer__link">Metodologia</a></li>
+          <li><a href="blog.html" class="footer__link">Blog</a></li>
+          <li><a href="contato.html" class="footer__link">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contato</div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="footer__contact-text">Florianópolis, Santa Catarina</span>
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="footer__contact-text">(48) 9 9999-9999</span>
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="footer__contact-text">contato@institutobisa.com.br</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Institucional</div>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Política de Privacidade</a></li>
+          <li><a href="#" class="footer__link">Termos de Uso</a></li>
+          <li><a href="https://www.institutobeeyond.com.br" class="footer__link" target="_blank" rel="noopener noreferrer">Parte do Grupo BEEyond</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© <span data-year></span> BISA — Bernhardt Instituto de Saúde Integrativa. Todos os direitos reservados.</p>
+      <div class="footer__bottom-links">
+        <a href="#" class="footer__bottom-link">Privacidade</a>
+        <a href="#" class="footer__bottom-link">Termos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="whatsapp-float">
+  <span class="whatsapp-float__label">Agendar pelo WhatsApp</span>
+  <a href="https://wa.me/5548999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20BISA."
+     class="whatsapp-float__btn" target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
