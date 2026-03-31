@@ -2562,6 +2562,13 @@ ul { list-style: none; }
     font-size: 0.95rem;
     padding: 10px 28px;
     letter-spacing: 0.16em;
+    color: var(--off-white);
+  }
+
+  .nav__link:hover,
+  .nav__link--active {
+    color: var(--beige);
+    background: rgba(201,165,80,0.15);
   }
 
   .nav__cta {
