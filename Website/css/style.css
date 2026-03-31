@@ -1893,7 +1893,7 @@ ul { list-style: none; }
 
 .footer__contact-text {
   font-size: 0.82rem;
-  color: rgba(245,242,238,0.48);
+  color: rgba(245,242,238,0.85);
   line-height: 1.55;
 }
 
