@@ -1749,12 +1749,13 @@ ul { list-style: none; }
 
 .footer__socials {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .footer__social-btn {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 8px;
   background: rgba(201,165,80,0.08);
   border: 1px solid rgba(201,165,80,0.22);
@@ -1772,6 +1773,12 @@ ul { list-style: none; }
   transition: var(--transition);
 }
 
+/* Ícones de preenchimento sólido (Facebook, YouTube, TikTok, WhatsApp, Pinterest) */
+.footer__social-btn svg[fill="currentColor"] {
+  fill: var(--beige);
+  stroke: none;
+}
+
 .footer__social-btn:hover {
   background: var(--beige);
   border-color: var(--beige);
@@ -1779,6 +1786,11 @@ ul { list-style: none; }
 
 .footer__social-btn:hover svg {
   stroke: var(--moss);
+}
+
+.footer__social-btn:hover svg[fill="currentColor"] {
+  fill: var(--moss);
+  stroke: none;
 }
 
 .footer__col-title {
