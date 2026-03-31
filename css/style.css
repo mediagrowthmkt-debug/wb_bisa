@@ -1499,19 +1499,27 @@ ul { list-style: none; }
   transform: translateY(-4px);
 }
 
-.blog-card__img {
+.blog-card__img-wrap {
+  overflow: hidden;
+  display: block;
   width: 100%;
   aspect-ratio: 16/9;
+  background: var(--beige-pale);
+}
+
+.blog-card__img-wrap img,
+.blog-card__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
   object-fit: cover;
+  display: block;
   transition: var(--transition-slow);
 }
 
+.blog-card:hover .blog-card__img-wrap img,
 .blog-card:hover .blog-card__img {
   transform: scale(1.04);
-}
-
-.blog-card__img-wrap {
-  overflow: hidden;
 }
 
 .blog-card__body {
@@ -2369,6 +2377,12 @@ ul { list-style: none; }
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.72s ease, transform 0.72s ease;
+}
+
+/* Imagens dentro de elementos AOS nunca ficam ocultas — evita
+   o browser ignorar o carregamento quando opacity=0 */
+[data-aos] img {
+  opacity: 1 !important;
 }
 
 [data-aos].aos-animate {
