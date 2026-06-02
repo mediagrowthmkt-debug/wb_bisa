@@ -208,7 +208,7 @@
           const nome = form.querySelector('[name="nome"]')?.value || '';
           const mensagem = form.querySelector('[name="mensagem"]')?.value || '';
           const waText = encodeURIComponent(`Olá! Meu nome é ${nome}. ${mensagem}`);
-          const waUrl = `https://wa.me/5548988183235?text=${waText}`;
+          const waUrl = `https://wa.me/5548988694319?text=${waText}`;
 
           setTimeout(() => {
             btn.innerHTML = '✓ Redirecionando…';
