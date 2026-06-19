@@ -1,0 +1,4 @@
+# Backups locais de edicao
+_bkp-*
+# Metadados internos do Centro de Edicao (MediaGrowth) - contem caminhos locais
+*.ceu.json

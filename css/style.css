@@ -674,11 +674,59 @@ ul { list-style: none; }
   box-shadow: 0 32px 80px rgba(26,46,26,0.18), 0 8px 24px rgba(201,165,80,0.13);
 }
 
-.hero__visual-inner img {
+.hero__visual-inner img,
+.hero__visual-inner video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 15%;
+  display: block;
+}
+
+/* Botão de som do vídeo do hero — minimalista (Montserrat) */
+.hero__sound {
+  position: absolute;
+  bottom: 22px;
+  right: 16px;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border-radius: 999px;
+  border: 1px solid rgba(242,233,216,0.32);
+  background: rgba(26,46,26,0.50);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--beige-pale);
+  font-family: var(--font-primary);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .25s ease, border-color .25s ease, transform .2s ease;
+}
+.hero__sound:hover {
+  background: rgba(26,46,26,0.78);
+  border-color: rgba(201,165,80,0.55);
+  transform: translateY(-1px);
+}
+.hero__sound-icon { width: 14px; height: 14px; display: inline-flex; }
+.hero__sound-icon svg { width: 100%; height: 100%; stroke: var(--gold); fill: none; }
+.hero__sound-state { color: var(--gold); font-weight: 600; }
+.hero__sound .icon-on { display: none; }
+.hero__sound.is-on .icon-on { display: inline; }
+.hero__sound.is-on .icon-off { display: none; }
+/* sinaliza que dá pra ativar enquanto está mudo */
+.hero__sound:not(.is-on) { animation: heroSoundPulse 2.6s ease-in-out infinite; }
+@keyframes heroSoundPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201,165,80,0.0); }
+  50%      { box-shadow: 0 0 0 7px rgba(201,165,80,0.13); }
+}
+@media (max-width: 600px) {
+  .hero__sound { bottom: 16px; right: 12px; padding: 8px 13px; font-size: 0.56rem; }
 }
 
 .hero__visual-badge {
@@ -991,10 +1039,13 @@ ul { list-style: none; }
   position: relative;
 }
 
-.about-img img {
+.about-img picture { display: block; }
+.about-img img,
+.about-img video {
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
+  display: block;
 }
 
 .about-img__badge {
