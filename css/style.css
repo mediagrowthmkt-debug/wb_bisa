@@ -3025,7 +3025,7 @@ ul { list-style: none; }
 
 @media (max-width: 480px) {
   .team-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .numbers-bar__inner {
