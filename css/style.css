@@ -1792,6 +1792,33 @@ ul { list-style: none; }
   display: block;
 }
 
+.location-map__open {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: rgba(209, 160, 45, 0.94);
+  color: var(--cream);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+  transition: transform var(--transition-base), background var(--transition-base);
+}
+
+.location-map__open:hover {
+  transform: translateY(-2px);
+  background: var(--gold);
+}
+
 .location-map__placeholder {
   width: 100%;
   height: 100%;
