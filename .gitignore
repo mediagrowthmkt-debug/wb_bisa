@@ -2,3 +2,8 @@
 _bkp-*
 # Metadados internos do Centro de Edicao (MediaGrowth) - contem caminhos locais
 *.ceu.json
+# add por mg-publicar-site (nao subir lixo)
+_shots/
+*.bak*
+.DS_Store
+_drive-materiais/
