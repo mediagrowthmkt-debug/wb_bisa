@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /Website/
+Disallow: /_shots/
+Disallow: /informacoes%20da%20empresa/
+
+Sitemap: https://bisasaudeintegrativa.com.br/sitemap.xml

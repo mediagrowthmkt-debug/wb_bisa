@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Consent Mode v2 (padrão negado até o aceite no banner) -->
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});try{if(localStorage.getItem('mg_consent')==='granted'){gtag('consent','update',{ad_storage:'granted',analytics_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});}}catch(e){}</script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -8,7 +10,6 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5PKCJPW9');</script>
   <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
@@ -20,10 +21,10 @@
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="BR-SC" />
   <meta name="geo.placename" content="Florianópolis" />
-  <link rel="canonical" href="https://www.bisasaudeintegrativa.com.br/pages/contato" />
+  <link rel="canonical" href="https://bisasaudeintegrativa.com.br/pages/contato" />
   <meta property="og:title" content="Contato   Agende sua Avaliação | BISA Saúde Integrativa Florianópolis" />
   <meta property="og:description" content="Entre em contato com a BISA Saúde Integrativa. WhatsApp, e-mail e redes sociais. Atendimento em Florianópolis, SC." />
-  <meta property="og:url" content="https://www.bisasaudeintegrativa.com.br/pages/contato" />
+  <meta property="og:url" content="https://bisasaudeintegrativa.com.br/pages/contato" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <link rel="icon" type="image/png" href="../imagens/BISA_bege_fundo_preto.png" />
@@ -33,8 +34,8 @@
   {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "BISA   Bernhardt Instituto de Saúde Integrativa",
-    "url": "https://www.bisasaudeintegrativa.com.br",
+    "name": "BISA Saúde Integrativa",
+    "url": "https://bisasaudeintegrativa.com.br",
     "telephone": "+55-48-98869-4319",
     "email": "contato@bisasaudeintegrativa.com.br",
     "address": {
@@ -73,11 +74,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="/pages/blog" class="nav__link">Blog</a></li>
         <li><a href="/pages/contato" class="nav__link nav__link--active">Contato</a></li>
         <li class="nav__menu-cta">
-          <a href="https://wa.me/5548988694319?text=Olá!%20Vim%20pelo%20site%20do%20BISA%20e%20gostaria%20de%20agendar%20minha%20avaliação."
+          <a href="https://wa.me/5548988694319?text=Ol%C3%A1%21%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20no%20BISA."
              class="btn btn--primary nav__cta-btn" target="_blank" rel="noopener noreferrer">Agendar Avaliação</a>
         </li>
       </ul>
-      <a href="https://wa.me/5548988694319?text=Olá!%20Vim%20pelo%20site%20do%20BISA%20e%20gostaria%20de%20agendar%20minha%20avaliação."
+      <a href="https://wa.me/5548988694319?text=Ol%C3%A1%21%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20no%20BISA."
          class="btn btn--primary nav__cta nav__cta-btn" target="_blank" rel="noopener noreferrer">Agendar Avaliação</a>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
@@ -111,48 +112,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </h2>
         <p style="color:var(--text-mid);margin-bottom:32px;font-size:0.95rem;">Preencha o formulário abaixo e entraremos em contato pelo WhatsApp para confirmar o agendamento.</p>
 
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="contact-form__row">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="nome">Nome completo *</label>
-              <input type="text" id="nome" name="nome" class="contact-form__input" placeholder="Seu nome" required autocomplete="name" />
+        <form class="contact-form mf" id="contactForm" data-lead-form novalidate>
+          <div class="mf__progress"><span class="mf__count">Passo 1 de 4</span><div class="mf__bar"><span></span></div></div>
+
+          <div class="mf__step is-active" data-step="1">
+            <p class="mf__q">O que você quer cuidar primeiro?</p>
+            <input type="hidden" name="interesse" id="interesse" value="" />
+            <div class="mf__opts">
+              <button type="button" class="mf__opt" data-val="Emagrecimento">Emagrecimento</button>
+              <button type="button" class="mf__opt" data-val="Lipedema">Lipedema</button>
+              <button type="button" class="mf__opt" data-val="Menopausa">Menopausa</button>
+              <button type="button" class="mf__opt" data-val="Saúde hormonal">Saúde hormonal</button>
+              <button type="button" class="mf__opt" data-val="Queda de cabelo">Queda de cabelo</button>
+              <button type="button" class="mf__opt" data-val="Avaliação geral">Ainda não sei, quero uma avaliação</button>
             </div>
+            <p class="mf__err">Escolha uma opção para continuar.</p>
           </div>
-          <div class="contact-form__row contact-form__row--2col">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="email">E-mail *</label>
-              <input type="email" id="email" name="email" class="contact-form__input" placeholder="seu@email.com" required autocomplete="email" />
-            </div>
-            <div class="contact-form__field">
+
+          <div class="mf__step" data-step="2">
+            <label class="mf__q" for="mensagem">Quer contar um pouco do que está sentindo? <span style="font-size:.9rem;color:var(--text-light);">(opcional)</span></label>
+            <textarea id="mensagem" name="mensagem" class="contact-form__input contact-form__textarea" placeholder="Ex.: o peso voltou depois da última dieta, ando sem energia..." rows="4"></textarea>
+          </div>
+
+          <div class="mf__step" data-step="3">
+            <label class="mf__q" for="nome">Como podemos te chamar?</label>
+            <input type="text" id="nome" name="nome" class="contact-form__input" placeholder="Seu nome" required autocomplete="name" />
+            <p class="mf__err">Digite o seu nome.</p>
+          </div>
+
+          <div class="mf__step" data-step="4">
+            <p class="mf__q">Para a equipe retornar</p>
+            <div class="contact-form__field" style="margin-bottom:14px;">
               <label class="contact-form__label" for="whatsapp">WhatsApp *</label>
-              <input type="tel" id="whatsapp" name="whatsapp" class="contact-form__input" placeholder="(48) 98869-4319" required autocomplete="tel" />
+              <input type="tel" id="whatsapp" name="whatsapp" class="contact-form__input" placeholder="(48) 99999-9999" required autocomplete="tel" inputmode="tel" />
             </div>
-          </div>
-          <div class="contact-form__row">
             <div class="contact-form__field">
-              <label class="contact-form__label" for="interesse">Área de interesse</label>
-              <select id="interesse" name="interesse" class="contact-form__input contact-form__select">
-                <option value="">Selecione um tratamento (opcional)</option>
-                <option value="Saúde Hormonal">Saúde Hormonal</option>
-                <option value="Longevidade">Longevidade</option>
-                <option value="Performance e Energia">Performance e Energia</option>
-                <option value="Composição Corporal">Composição Corporal</option>
-                <option value="Sono e Recuperação">Sono e Recuperação</option>
-                <option value="Saúde Mental Integrativa">Saúde Mental Integrativa</option>
-                <option value="Avaliação Geral">Avaliação Geral   Não sei por onde começar</option>
-              </select>
+              <label class="contact-form__label" for="email">E-mail (opcional)</label>
+              <input type="email" id="email" name="email" class="contact-form__input" placeholder="seu@email.com" autocomplete="email" />
             </div>
+            <p class="mf__err">Confira o WhatsApp (com DDD) e o e-mail.</p>
+            <p class="mf__privacy">Ao enviar, você abre o WhatsApp do BISA com essas informações. Usamos os seus dados só para responder ao seu contato, conforme a nossa <a href="/pages/privacidade">Política de Privacidade</a>.</p>
           </div>
-          <div class="contact-form__row">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="mensagem">Mensagem (opcional)</label>
-              <textarea id="mensagem" name="mensagem" class="contact-form__input contact-form__textarea" placeholder="Conte um pouco sobre o que está sentindo ou o que gostaria de entender melhor..." rows="5"></textarea>
-            </div>
+
+          <div class="mf__nav">
+            <button type="button" class="mf__back" hidden>← Voltar</button>
+            <button type="button" class="btn btn--primary mf__next">Continuar</button>
+            <button type="submit" class="btn btn--primary contact-form__submit" hidden>Enviar pelo WhatsApp</button>
           </div>
-          <button type="submit" class="btn btn--primary contact-form__submit">
-            Enviar via WhatsApp
-          </button>
-          <p class="contact-form__disclaimer">Ao enviar, você será redirecionado ao WhatsApp da BISA com as informações preenchidas. Nenhum dado é armazenado neste formulário.</p>
+          <p class="bx-particular" style="margin-top:12px;">Atendimento particular, sem convênio</p>
         </form>
       </div>
 
@@ -166,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div>
             <div class="contact-channel__label">WhatsApp</div>
-            <a href="https://wa.me/5548988694319?text=Olá!%20Vim%20pelo%20site%20do%20BISA%20e%20gostaria%20de%20agendar%20minha%20avaliação."
+            <a href="https://wa.me/5548988694319?text=Ol%C3%A1%21%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20no%20BISA."
                class="contact-channel__value contact-channel__value--link" target="_blank" rel="noopener noreferrer">
               (48) 98869-4319
             </a>
@@ -277,12 +284,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="footer__logo">
           <img src="../imagens/BISA_bege_fundo_preto.png" alt="BISA" />
         </div>
-        <p class="footer__tagline">Bernhardt Instituto de Saúde Integrativa   medicina integrativa, longevidade e performance em Florianópolis.</p>
+        <p class="footer__tagline">BISA Saúde Integrativa: medicina integrativa, longevidade e performance em Florianópolis.</p>
                 <div class="footer__socials">
           <a href="https://www.instagram.com/instituto.bisa/" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram BISA">
             <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a href="https://wa.me/5548988694319?text=Olá!%20Vim%20pelo%20site%20do%20BISA%20e%20gostaria%20de%20agendar%20minha%20avaliação." class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp BISA">
+          <a href="https://wa.me/5548988694319?text=Ol%C3%A1%21%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20no%20BISA." class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp BISA">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
           </a>
           <a href="https://www.facebook.com/people/Bisa-Sa%C3%BAde-Integrativa/61584937605903/" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook BISA">
@@ -331,17 +338,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <div class="footer__col-title">Institucional</div>
         <ul class="footer__links">
-          <li><a href="#" class="footer__link">Política de Privacidade</a></li>
-          <li><a href="#" class="footer__link">Termos de Uso</a></li>
+          <li><a href="/pages/privacidade" class="footer__link">Política de Privacidade</a></li>
+          <li><a href="/pages/termos" class="footer__link">Termos de Uso</a></li>
           <li><a href="https://www.institutobeeyond.com.br" class="footer__link" target="_blank" rel="noopener noreferrer">Parte do Grupo BEEyond</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© <span data-year></span> BISA   Bernhardt Instituto de Saúde Integrativa. Todos os direitos reservados.</p>
+      <p class="footer__copy">© <span data-year></span> BISA Saúde Integrativa. Todos os direitos reservados.</p>
       <div class="footer__bottom-links">
-        <a href="#" class="footer__bottom-link">Privacidade</a>
-        <a href="#" class="footer__bottom-link">Termos</a>
+        <a href="/pages/privacidade" class="footer__bottom-link">Privacidade</a>
+        <a href="/pages/termos" class="footer__bottom-link">Termos</a>
       </div>
     </div>
   </div>
@@ -359,14 +366,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<div class="whatsapp-float">
+<div class="whatsapp-float" data-cta-flutuante>
   <span class="whatsapp-float__label">Agendar pelo WhatsApp</span>
-  <a href="https://wa.me/5548988694319?text=Olá!%20Vim%20pelo%20site%20do%20BISA%20e%20gostaria%20de%20agendar%20minha%20avaliação."
+  <a href="https://wa.me/5548988694319?text=Ol%C3%A1%21%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20no%20BISA."
      class="whatsapp-float__btn" target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
   </a>
 </div>
 
 <script src="../js/main.js"></script>
+<script src="/js/mg-form.js" defer></script>
+<script src="/js/mg-lead.js" data-site="bisa" data-prefix="BISA" data-page="CONTATO" data-privacy="/pages/privacidade" defer></script>
 </body>
 </html>

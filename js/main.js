@@ -1,5 +1,5 @@
 /* ============================================================
-   BISA — BERNHARDT INSTITUTO DE SAÚDE INTEGRATIVA
+   BISA SAÚDE INTEGRATIVA
    Main JavaScript
    ============================================================ */
 
@@ -176,7 +176,7 @@
 
   /* ---- FORM VALIDATION & SUBMIT ---- */
   function initForms() {
-    const forms = document.querySelectorAll('.contact-form');
+    const forms = document.querySelectorAll('.contact-form:not([data-lead-form])');
     forms.forEach(form => {
       form.addEventListener('submit', function (e) {
         e.preventDefault();
